@@ -96,7 +96,7 @@ void removeNameCard(NameCard list[], int *currentNumberOfNameCards)
     char nameToRemove[20];
     char temp;
     printf("Enter personName:");
-    scanf("%c", &temp);
+    scanf("%c", &temp); // see https://www.includehelp.com/c/c-program-to-read-string-with-spaces-using-scanf-function.aspx
     fgets(nameToRemove, 20, stdin);
     strtok(nameToRemove, "\n");
 
