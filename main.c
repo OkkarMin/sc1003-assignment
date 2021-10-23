@@ -30,6 +30,7 @@ int main()
     int userChoice;
 
     printMenu();
+
     while (userChoice != 5)
     {
         printf("Enter your choice:");
@@ -61,6 +62,8 @@ int main()
 
 void listNameCards(NameCard list[], int *currentNumberOfCards)
 {
+    printf("listNameCards():\n");
+
     if (*currentNumberOfCards == 0)
         printf("The name card holder is empty\n");
 
@@ -84,7 +87,6 @@ void addNameCard(NameCard list[], int *currentNumberOfNameCards)
 
 void removeNameCard(NameCard list[], int *currentNumberOfNameCards)
 {
-
     printf("removeNameCard():\n");
 
     if (*currentNumberOfNameCards == 0)
